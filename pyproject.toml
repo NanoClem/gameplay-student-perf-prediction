@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "gameplay-student-perf-prediction"
+version = "0.1.0"
+description = ""
+authors = ["NanoClem <clemdecoop.pro@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gameplay_student_perf_prediction"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+ipykernel = "^6.22.0"
+plotly-express = "^0.4.1"
+pandas = {version = "2.0.0rc1", extras = ["pyarrow"]}
+pyarrow = "^11.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
